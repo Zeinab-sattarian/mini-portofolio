@@ -362,7 +362,7 @@ section {
   color: var(--accent-02);
   --activity-graph-text-color: var(--accent-02);
   --activity-graph-rounded: 2px;
-  --activity-graph-level-0-bg: var(var(--accent-04));
+  --activity-graph-level-0-bg: var(--accent-04);
   --activity-graph-level-1-bg: #0e4545;
   --activity-graph-level-2-bg: #006c69;
   --activity-graph-level-3-bg: #25a0a7;
