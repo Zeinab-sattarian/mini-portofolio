@@ -67,7 +67,7 @@ body.light {
   padding: 25px 10px;
 }
 
-.navbar ion-icon {
+.navbar svg {
   font-size: 32px;
   margin: auto;
 }
