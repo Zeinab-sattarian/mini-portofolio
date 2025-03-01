@@ -13,6 +13,15 @@ const ExperienceItem = ({
   finishDate,
   description,
 }: ExperienceItemProps) => {
-  return <div></div>;
+  return (
+    <div className="experience">
+      <h2>{title}</h2>
+      <h4>
+        {company} <span className="date">{startDate}</span>&#x26AC;
+        <span className="date">{finishDate}</span>
+      </h4>
+      <p>{description}</p>
+    </div>
+  );
 };
 export default ExperienceItem;
