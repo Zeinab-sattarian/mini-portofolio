@@ -1,4 +1,5 @@
 import ExperienceItem from "./ExperienceItem";
+import "../../../style.css";
 
 const items = [
   {
