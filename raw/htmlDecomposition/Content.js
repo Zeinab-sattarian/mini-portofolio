@@ -16,9 +16,8 @@ const Content = () => {
         <div className="divider ltr"></div>
         <p>
           I'm thrilled to tell you about myself. I have over 6 years experience
-          of IT, specializing in{" "}
+          of IT, specializing in
           <span className="colored">
-            {" "}
             PhP, Database Development, and open-source frameworks
           </span>
           .If you're in need of a motivated team player, let's connect!

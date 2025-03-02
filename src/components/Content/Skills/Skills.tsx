@@ -1,5 +1,8 @@
 import { FaCss3Alt, FaHtml5, FaPython, FaReact } from "react-icons/fa";
 import SkillItem from "./SkillItem";
+import "../../../style.css";
+
+//  write a function that will insert a value into the items dictionary from another defined list if it has the value of true.
 
 const items = [
   {
