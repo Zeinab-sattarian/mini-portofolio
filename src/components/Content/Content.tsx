@@ -8,6 +8,8 @@ import Intro from "./Intro";
 import Skills from "./Skills/Skills";
 import Testimonials from "./Testimonials/Testimonials";
 import "../../style.css";
+import Projects from "./Projects/Projects";
+import Blogs from "./Blogs/Blogs";
 
 const Content = () => {
   return (
@@ -26,6 +28,16 @@ const Content = () => {
         <Heading prop="Contributions" />
         <DividerLine />
         <Contributions />
+        <h2 id="projects">
+          My <span className="colored">Projects</span>
+        </h2>
+        <DividerLine />
+        <Projects />
+        <h2 id="blogs">
+          My <span className="colored">Blogs</span>
+        </h2>
+        <DividerLine />
+        <Blogs />
         <Heading prop="Testimonials" />
         <DividerLine />
         <Testimonials />

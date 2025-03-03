@@ -18,16 +18,17 @@ const SkillItem = ({
   pieChart,
   pieValue,
 }: SkillItemProps) => {
-  return (
-    <div>
-      if ({progressBar} && {pieChart} === false)
-      {
+  if (progressBar === false && pieChart === false) {
+    return (
+      <div>
         <p>
           {icon} {title}
         </p>
-      }
-      elif ({pieChart} === true)
-      {
+      </div>
+    );
+  } else if (pieChart === true) {
+    return (
+      <div>
         <div
           className="circle"
           style={{ "--percent": { pieValue } } as React.CSSProperties}
@@ -37,17 +38,19 @@ const SkillItem = ({
             <small>%</small>
           </h4>
         </div>
-      }
-      elif ({progressBar} === true)
-      {
+      </div>
+    );
+  } else if (progressBar === true) {
+    return (
+      <div>
         <div className="progress-bar">
           <p>
             {title} <span>{progressValue}%</span>
           </p>
           <progress max="100" value={progressValue}></progress>
         </div>
-      }
-    </div>
-  );
+      </div>
+    );
+  }
 };
 export default SkillItem;

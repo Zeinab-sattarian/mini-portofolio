@@ -11,27 +11,30 @@ const ContactInputItem = ({
   name,
   placeholder,
 }: ContactInputItemProps) => {
-  return (
-    <div>
-      if (type !== "textarea")
-      {
-        <input
-          type={type}
-          className={className}
-          name={name}
-          placeholder={placeholder}
-        />
-      }
-      else
-      {
+  if (type !== "textarea") {
+    return (
+      <div>
+        {
+          <input
+            type={type}
+            className={className}
+            name={name}
+            placeholder={placeholder}
+          />
+        }
+      </div>
+    );
+  } else {
+    return (
+      <div>
         <textarea
           className={className}
           name={name}
           placeholder={placeholder}
         ></textarea>
-      }
-    </div>
-  );
+      </div>
+    );
+  }
 };
 
 export default ContactInputItem;

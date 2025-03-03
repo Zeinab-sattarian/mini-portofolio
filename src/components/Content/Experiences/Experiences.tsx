@@ -31,10 +31,6 @@ const items = [
 const Experiences = () => {
   return (
     <section className="experiences">
-      <h2 id="resume">
-        My <span className="colored">Experiences</span>
-      </h2>
-      <div className="divider ltr"></div>
       {items.map((item, index) => (
         <ExperienceItem key={index} {...item} />
       ))}
