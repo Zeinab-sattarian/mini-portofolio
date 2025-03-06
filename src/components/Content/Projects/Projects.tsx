@@ -6,7 +6,6 @@ import project5 from "../../../img/project-5.png";
 import project6 from "../../../img/project-6.png";
 import project7 from "../../../img/project-7.png";
 import ProjectItem from "./ProjectItem";
-import "../../../style.css";
 
 const items = [
   {

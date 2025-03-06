@@ -1,5 +1,4 @@
 import ContactInputItem from "./ContactInputItem";
-import "../../../style.css";
 
 const items = [
   {

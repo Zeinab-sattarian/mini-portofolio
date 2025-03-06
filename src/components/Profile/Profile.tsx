@@ -1,6 +1,5 @@
 import cover from "../../img/cover.jpg";
 import profile from "../../img/profile.jpg";
-import "../../style.css";
 import Footer from "./Footer/Footer";
 import SocialIcons from "./SocialIcons";
 

@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
-import "../../../style.css";
 
-interface SkillItemProps {
+export interface SkillItemProps {
   icon: ReactNode;
   title: string;
   progressBar: boolean;
   progressValue: number;
   pieChart: boolean;
   pieValue: number;
+  childItem?: ReactNode;
 }
 
 const SkillItem = ({
@@ -17,6 +17,7 @@ const SkillItem = ({
   progressValue,
   pieChart,
   pieValue,
+  childItem,
 }: SkillItemProps) => {
   if (progressBar === false && pieChart === false) {
     return (
@@ -31,13 +32,16 @@ const SkillItem = ({
       <div>
         <div
           className="circle"
-          style={{ "--percent": { pieValue } } as React.CSSProperties}
+          style={{
+            background: `conic-gradient(from 0deg, var(--primary-color) 0%, var(--primary-color) 0% ${pieValue}%, var(--accent-03) ${pieValue}%)`,
+          }}
         >
           <h4>
             {pieValue}
             <small>%</small>
           </h4>
         </div>
+        <p>{title}</p>
       </div>
     );
   } else if (progressBar === true) {
@@ -49,6 +53,8 @@ const SkillItem = ({
           </p>
           <progress max="100" value={progressValue}></progress>
         </div>
+
+        {childItem}
       </div>
     );
   }

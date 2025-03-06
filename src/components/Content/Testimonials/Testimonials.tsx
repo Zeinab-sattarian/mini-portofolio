@@ -1,10 +1,8 @@
-import "../../../style.css";
 import Testimonial1 from "../../../img/testimonial-1.png";
 import Testimonial2 from "../../../img/testimonial-2.png";
 import Testimonial3 from "../../../img/testimonial-3.png";
 import TestimonialItem from "./TestimonialItem";
 import { FaStar, FaStarHalf } from "react-icons/fa";
-import "../../../style.css";
 
 const items = [
   {

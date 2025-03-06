@@ -1,13 +1,8 @@
-import "../../../style.css";
 import ContributionChart from "./ContributionChart";
 
 const Contributions = () => {
   return (
-    <section className="contribution">
-      <h2>
-        My <span className="colored">Contributions</span>
-      </h2>
-      <div className="divider ltr"></div>
+    <section className="contribution" style={{ padding: 5 }}>
       <ContributionChart />
     </section>
   );

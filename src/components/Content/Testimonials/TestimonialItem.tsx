@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import "../../../style.css";
 
 interface TestimonialItemProps {
   img: ReactNode;

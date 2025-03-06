@@ -12,7 +12,9 @@ const SocialIcons = () => {
     <ul>
       {items.map((item, index) => (
         <li key={index}>
-          <a href="#">{item.icon}</a>
+          <span>
+            <a href="#">{item.icon}</a>
+          </span>
         </li>
       ))}
     </ul>

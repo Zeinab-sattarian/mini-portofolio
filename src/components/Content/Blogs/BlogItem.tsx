@@ -1,9 +1,7 @@
-import { ReactNode } from "react";
 import { FaCaretRight } from "react-icons/fa";
-import "../../../style.css";
 
 interface BlogItemProps {
-  img: ReactNode;
+  img: string;
   title: string;
   description: string;
 }
@@ -11,7 +9,7 @@ interface BlogItemProps {
 const BlogItem = ({ img, title, description }: BlogItemProps) => {
   return (
     <div className="blog-box">
-      {img}
+      <img src={img} alt="" />
       <div>
         <h3>{title}</h3>
         <p>{description}</p>

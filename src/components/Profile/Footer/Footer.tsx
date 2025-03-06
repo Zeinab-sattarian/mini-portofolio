@@ -1,4 +1,3 @@
-import "../../../style.css";
 import DividerLine from "../../Content/DividerLine";
 import FooterTable from "./FooterTable";
 

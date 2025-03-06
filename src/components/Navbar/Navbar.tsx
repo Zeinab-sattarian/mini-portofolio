@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import NavItem, { NavItemMainProps } from "./NavItem";
 import { CgProfile } from "react-icons/cg";
 import {
@@ -8,23 +7,13 @@ import {
 } from "react-icons/io5";
 import { IoIosContact } from "react-icons/io";
 import { CiDark, CiLight } from "react-icons/ci";
+import useActiveItem from "../../hooks/useActiveItem";
+import { useTheme } from "../../providers/ThemeProvider";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState<"light" | "dark">("dark");
-  const [activeItemIndex, setActiveItemIndex] = useState<number>(0);
+  const theme = useTheme();
 
-  const theme = () => {
-    setDarkMode(darkMode === "light" ? "dark" : "light");
-    if (darkMode === "dark") {
-      document.body.classList.add("light");
-    } else {
-      document.body.classList.remove("light");
-    }
-  };
-
-  const handleActiveItem = (itemIndex: number) => {
-    setActiveItemIndex(itemIndex);
-  };
+  const { activeItemIndex, handleActiveItem } = useActiveItem();
 
   const items: Omit<NavItemMainProps, "isActive" | "onClick">[] = [
     {
@@ -59,15 +48,11 @@ const Navbar = () => {
     },
   ];
 
-  useEffect(() => {
-    console.log(activeItemIndex, items[activeItemIndex]);
-  }, [activeItemIndex]);
-
   return (
     <nav className="navbar">
       <div className="box theme">
-        <div className="item" onClick={theme}>
-          {darkMode === "light" ? <CiDark /> : <CiLight />}
+        <div className="item" onClick={theme?.toggleTheme}>
+          {theme?.darkMode === "light" ? <CiDark /> : <CiLight />}
         </div>
       </div>
 

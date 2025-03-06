@@ -4,7 +4,6 @@ import {
   IoRocketOutline,
 } from "react-icons/io5";
 import AchievementItem from "./AchievementItem";
-import "../../../style.css";
 
 const items = [
   { icon: <IoLayersOutline />, milestone: "2k+", title: "Websites Designed" },

@@ -1,5 +1,4 @@
 import GitHubCalendar from "react-github-calendar";
-import "../../../style.css";
 
 const ContributionChart = () => {
   return (

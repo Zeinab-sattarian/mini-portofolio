@@ -1,4 +1,3 @@
-import "../../style.css";
 import DividerLine from "./DividerLine";
 
 const Intro = () => {

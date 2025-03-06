@@ -7,7 +7,6 @@ import Experiences from "./Experiences/Experiences";
 import Intro from "./Intro";
 import Skills from "./Skills/Skills";
 import Testimonials from "./Testimonials/Testimonials";
-import "../../style.css";
 import Projects from "./Projects/Projects";
 import Blogs from "./Blogs/Blogs";
 

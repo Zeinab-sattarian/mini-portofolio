@@ -1,5 +1,3 @@
-import "../../../style.css";
-
 interface ExperienceItemProps {
   title: string;
   company: string;
